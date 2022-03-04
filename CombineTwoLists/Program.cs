@@ -17,8 +17,6 @@ List<int> Combine(List<int> numbers1, List<int> numbers2)
         {
             continue;
         } result.Add(num2);
-        result.Add();
-        
     }
     return result;
 }
