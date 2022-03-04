@@ -25,37 +25,33 @@ namespace CombineTwoArrays
 
             return result;
         }
+        public static IEnumerable<int> CombineList2(IEnumerable<int> first, IEnumerable<int> second)
+        {
+            var result = new List<int>();
+            result.AddRange(first);
+            result.AddRange(second);
+            return result.Distinct();
+        }
+        
+        public static IEnumerable<int> CombineList3(IEnumerable<int> first, IEnumerable<int> second)
+        {
+            return first.Union(second);
+        }
+        
+        public static List<int> CombineList4(List<int> first, List<int> second)
+        {
+            var result = new List<int>();
+            foreach (var number in first)
+                if(!result.Contains(number))
+                    result.Add(number);
+    
+            foreach (var number in second)
+                if(!result.Contains(number))
+                    result.Add(number);
+    
+            return result;
+        }
     }
 }
-
-/*IEnumerable<int> Combine2(IEnumerable<int> first, IEnumerable<int> second)
-{
-    var result = new List<int>();
-    result.AddRange(first);
-    result.AddRange(second);
-    return result.Distinct();
-}
-
-IEnumerable<int> Combine(IEnumerable<int> first, IEnumerable<int> second)
-{
-    return first.Union(second);
-}
-
-IEnumerable<int> Combine(IEnumerable<int> first, IEnumerable<int> second) => first.Union(second);
-
-List<int> Combine(List<int> first, List<int> second)
-{
-    var result = new List<int>();
-    foreach (var number in first)
-        if(!result.Contains(number))
-            result.Add(number);
-    
-    foreach (var number in second)
-        if(!result.Contains(number))
-            result.Add(number);
-    
-    return result;
-}
-*/ 
 
 
