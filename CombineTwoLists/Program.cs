@@ -6,22 +6,32 @@
     var combinedLists = Combine.CombineList(numbers1, numbers2);
     foreach (var number in combinedLists.OrderBy(x => x))
     {
-        Console.WriteLine(number);
+        //Console.WriteLine(number);
     }
 
-    var combineList2 = Combine.CombineList2(numbers1, numbers2);
+    IEnumerable<int> combineList2 = Combine.CombineList2(numbers1, numbers2);
     {
         {
-            Console.WriteLine(combineList2);
+            //Console.WriteLine(combineList2);
         } 
     }
 
-    var combineList3 = Combine.CombineList3(numbers1, numbers2);
+    IEnumerable<int> combineList3 = Combine.CombineList3(numbers1, numbers2);
     {
-        Console.WriteLine(combineList3);
+       //Console.WriteLine(combineList3);
     }
 
-    var combineList4 = Combine.CombineList4(numbers1, numbers2);
+    IEnumerable<int> combineList4 = Combine.CombineList4(numbers1, numbers2);
     { 
-        Console.WriteLine(combineList4);
+       //Console.WriteLine(combineList4);
     }
+
+    void PrintingResults(IEnumerable<int> result)
+    {
+        Console.WriteLine();
+    }
+    
+    PrintingResults(combinedLists);
+    PrintingResults(combineList2);
+    PrintingResults(combineList3);
+    PrintingResults(combineList4);
