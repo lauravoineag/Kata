@@ -4,7 +4,6 @@ public static class Print{
 
 public static void Stable(IStable stable)
     {
-        stable.Horses.
         foreach (var horse in stable.Horses)
         {
             Horse(horse);
