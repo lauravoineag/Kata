@@ -2,7 +2,7 @@
 
 var dogverine = new Dogverine("Dogverine", "Slash", "Slashes with knives");
 dogverine.ArmMetal = "metal claws show when threatened";
-dogverine.SetLimbs(2); // after battle
+dogverine.SetLimbs(    2); // after battle
 
 /*Dogverine dogverine = new Dogverine();
 dogverine.Height = "tall";
