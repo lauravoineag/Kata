@@ -7,7 +7,7 @@ public class AnimeCollections : IAnimeCollections
     public IAnime[] AnimeArray { get; set; }
     public IEnumerable<IAnime> AnimeEnumerable { get; set; }
 
-    publi      vc AnimeCollections()
+    public AnimeCollections()
     {
         //Lists
         AnimeList = new List<IAnime>();

@@ -2,33 +2,32 @@
 //tv.SetChannel(104);
 //tv.VolumeUp();
 
-IChangeChannel channels = new TvRemoteControl();
-channels.SetChannel(102);
+// IChangeChannel channels = new TvRemoteControl();
+// channels.SetChannel(102);
+//
+// IChangeVolume volume = new TvRemoteControl();
+// volume.VolumeUp();
+// volume.VolumeUp();
+// volume.VolumeUp();
+// volume.VolumeUp();
+// volume.VolumeUp();
+// volume.VolumeDown();
+//
+// Console.WriteLine();
 
-IChangeVolume volume = new TvRemoteControl();
-volume.VolumeUp();
-volume.VolumeUp();
-volume.VolumeUp();
-volume.VolumeUp();
-volume.VolumeUp();
-volume.VolumeDown();
+void ChangeChannel(IChangeChannel control)
+{
+    control.SetChannel(102);
+}
 
-Console.WriteLine();
+void ChangeVolume(IChangeVolume control)
+{
+    control.VolumeDown();
+}
 
-
-//void ChangeChannel(IChangeChannel control)
-//{
-//    control.SetChannel(102);
-//}
-
-//void ChangeVolume(IChangeVolume control)
-//{
-//    control.VolumeDown();
-//}
-
-//var remote = new TvRemoteControl();
-//ChangeChannel(remote);
-//ChangeVolume(remote);
+var remote = new TvRemoteControl();
+ChangeChannel(remote);
+ChangeVolume(remote);
 
 
 public class TvRemoteControl : IChangeChannel, IChangeVolume
