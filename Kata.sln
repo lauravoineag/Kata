@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DansStable", "DansStable\Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic Collections", "Basic Collections\Basic Collections.csproj", "{71E96569-361B-45D3-867E-A7FAD2E0CB9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionKata", "..\..\..\CollectionKata\CollectionKata\CollectionKata.csproj", "{9172D1CB-6863-4883-BDB2-71F2EF54933A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionKata", "CollectionKata\CollectionKata.csproj", "{7FA5B90E-F9DE-4A59-9D88-7FCABC33A4A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,9 +44,9 @@ Global
 		{71E96569-361B-45D3-867E-A7FAD2E0CB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71E96569-361B-45D3-867E-A7FAD2E0CB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71E96569-361B-45D3-867E-A7FAD2E0CB9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9172D1CB-6863-4883-BDB2-71F2EF54933A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9172D1CB-6863-4883-BDB2-71F2EF54933A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9172D1CB-6863-4883-BDB2-71F2EF54933A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9172D1CB-6863-4883-BDB2-71F2EF54933A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FA5B90E-F9DE-4A59-9D88-7FCABC33A4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA5B90E-F9DE-4A59-9D88-7FCABC33A4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA5B90E-F9DE-4A59-9D88-7FCABC33A4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA5B90E-F9DE-4A59-9D88-7FCABC33A4A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
