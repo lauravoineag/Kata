@@ -1,13 +1,13 @@
 namespace CollectionKata;
-
+ 
 public class AnimeCollections : IAnimeCollections
 {
-    public List<IAnime> AnimeList { get; set; }
+    public List<IAnime> AnimeList { get; set; } 
     public ICollection<IAnime> AnimeCollection { get; set; }
     public IAnime[] AnimeArray { get; set; }
     public IEnumerable<IAnime> AnimeEnumerable { get; set; }
 
-    public AnimeCollections()
+    publi      vc AnimeCollections()
     {
         //Lists
         AnimeList = new List<IAnime>();
@@ -15,7 +15,7 @@ public class AnimeCollections : IAnimeCollections
         {
             Name = "Nana",
             Episodes =47,
-            Genre = "Drama, Romance, Slice of Life",
+            Genre = "Drama, Romance, Slice of Life",  
             Studio = "Madhouse",
             ReleasedDate = new DateOnly(2006, 4, 05)
         });
@@ -38,7 +38,7 @@ public class AnimeCollections : IAnimeCollections
             Studio = "Kyoto Animation",
             ReleasedDate = new DateOnly(2016, 09, 17)
         };
-        AnimeList.Add(aSilentVoice);
+        AnimeList.Add(aSilentVoice);     
         
         AnimeList.Add(new Anime
         {
