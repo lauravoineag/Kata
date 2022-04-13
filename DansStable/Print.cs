@@ -1,8 +1,8 @@
 namespace Dan_s_Stable;
 
-public static class Print{
-
-public static void Stable(IStable stable)
+public static class Print
+{
+    public static void Stable(IStable stable)
     {
         foreach (var horse in stable.Horses)
         {
@@ -42,7 +42,5 @@ public static void Stable(IStable stable)
     {
         Console.WriteLine(donkey.Colour);
         Animal(donkey);
-   
     }
-    
 }
