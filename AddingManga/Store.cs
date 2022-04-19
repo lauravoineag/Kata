@@ -14,9 +14,8 @@ public class Store:IStore
     {
         MangasList.Add(manga);
     }
-    public void AddAnimeSeries(IAnimeSeries animeSeries){}
+    public void AddAnimeSeries(IAnimeSeries animeSeries)
     {
         AnimeSeries.Add(animeSeries);
     }
 }
-
