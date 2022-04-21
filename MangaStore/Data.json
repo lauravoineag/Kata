@@ -1,0 +1,23 @@
+{
+  "MangaStore":{
+    "Books":{
+      "Mangas": [
+        {
+          "Title":"Naruto",
+          "Genre": "Action",
+          "Volumes": 10,
+          "Characters": [
+            {
+              "Name": "Naruto",
+              "Age":14,
+              "Personality": "action based",
+              "CharacterProgression": "good"
+            }
+          ],
+          "Description": "Action anime",
+          "Rating":8.0
+        }
+      ]
+    } 
+  }
+}
