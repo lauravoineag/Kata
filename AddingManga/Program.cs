@@ -17,12 +17,6 @@ Manga jujutsuKaisen = new Manga("Jujutsu Kaisen", 10);
 Manga given=new Manga("Given",10);
 Manga attackOnTitan = new Manga("Attack on Titan",10 );
 
-AnimeSeries claymore = new AnimeSeries();
-claymore.Genre = "dark fantasy";
-
-var storeAnimeSeries = new Store();
-storeAnimeSeries.AddAnimeSeries(claymore);
-
 var store= new Store();
 store.MangasList.Add(tokyoRevengers);
 store.MangasList.Add(bleach);
