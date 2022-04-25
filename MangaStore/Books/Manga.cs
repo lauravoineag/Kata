@@ -7,6 +7,6 @@ public class Manga
     public int Volumes { get; set; }
     public List<Character> Characters { get; set; }
     public string Description { get; set; }
-    public int Rating { get; set; }
+    public double Rating { get; set; }
 
 }

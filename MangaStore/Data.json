@@ -5,19 +5,105 @@
         {
           "Title":"Naruto",
           "Genre": "Action",
-          "Volumes": 10,
+          "Volumes": 72,
           "Characters": [
             {
               "Name": "Naruto",
-              "Age":14,
-              "Personality": "action based",
-              "CharacterProgression": "good"
+              "Age":13,
+              "Personality": "explosive, loud, simple minded, easy going, cheerful person",
+              "CharacterProgression": "Naruto is scorned by the villagers for being the host of a Nine-Tails Demon but soon becomes a ninja under an experienced sensei and along with his team completes dangerous missions and saves the world a few times earning him the position of leader and raising the next generation.  "
             }
           ],
-          "Description": "Action anime",
+          "Description": "The story is about Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village",
+          "Rating":8.0
+        },
+        {
+          "Title":"Blue Spring Ride",
+          "Genre": "Shojo",
+          "Volumes": 13,
+          "Characters": [
+            {
+              "Name": "Futaba Yoshioka",
+              "Age":16,
+              "Personality": "strong-willed, stubborn, yet passionate and caring",
+              "CharacterProgression": "Futaba is a high-school student who attempts to fit in with her female friends by acting 'unfeminine', due to a history of female classmates ostracizing her our of jealousy. However, when she sees Kou again she remembers her true self and decides to improve"
+            },
+            
+            {
+              "Name": "Kou Mabuchi",
+              "Age":16,
+              "Personality": "gentle, kind, quiet",
+              "CharacterProgression": "Kou, after his mother's death became more pessimistic and distanced himself from Futaba.As Kou became more honest with others including himself,he finally realizes that he doesn't need to hide his feelings anymore and pursues Futaba."
+            }
+          ],
+          "Description": "Ao Haru Ride follows Futaba as she searches for true love and friendship,all while trying her best to stay true to herself",
           "Rating":8.0
         }
+        
       ]
-    } 
+    },
+    "Posters": [
+      {
+        "Title": "Attack on Titan",
+        "Dimensions": "A4",
+        "Material": "Paper"
+      },
+
+      {
+        "Title":"Claymore",
+        "Dimensions": "A4",
+        "Material": "Canvas"
+      }
+    ],
+    "Figurines":[
+      {
+        "Cuteness":"Amazingly cute",
+        "Title":"Ran Mitake, BanG Dream!",
+        "Price": 39.00,
+        "Manufacturer": "Bandai Spirits -Official Anime Merchandise"
+      },
+      {
+        "Cuteness":"Very handsome",
+        "Title":"Giyu Tomioka, BanG Dream!",
+        "Price": 29.00,
+        "Manufacturer": "Bandai Spirits -Official Anime Merchandise"
+      }
+    ],
+    "StoreMusic": {
+        "Title":"Varied",
+        "Genre": "Japanese Pop-Rock Music"
+    },
+    "Games": {
+      "CardGames": [
+        {
+          "Title":"Yu-Gi-Oh!",
+          "Description": "Trading card Anime"
+        },
+        {
+          "Title":"Demon Slayer",
+          "Description": "Playing cards with Demon Slayer anime print"
+        }
+      ],
+      "VideoGames": [
+        {
+        "Title":"Demon Slayer",
+        "Description": "Video Game with Demon Slayer "
+        },
+        {
+          "Title":"Sword Art Online",
+          "Description": "Video Game with Sword Art Online Characters "
+        }
+      ],
+      "BoardGames": [
+        {
+          "Title":"Demon Slayer",
+          "Description": "Board Game with Demon Slayer Characters"
+        },
+        {
+          "Title":"Hunted X Hunter",
+          "Description": "Board Game with Hunter X Hunter Characters"
+        }
+      ]
+    }
   }
 }

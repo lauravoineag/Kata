@@ -8,3 +8,8 @@ public class MangaStore
     public AnimeMusic StoreMusic { get; set; }
     public Games Games { get; set; }
 }
+
+ public class Root
+    {
+        public MangaStore MangaStore { get; set; }
+    }
