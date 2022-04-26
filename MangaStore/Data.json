@@ -26,18 +26,41 @@
               "Name": "Futaba Yoshioka",
               "Age":16,
               "Personality": "strong-willed, stubborn, yet passionate and caring",
-              "CharacterProgression": "Futaba is a high-school student who attempts to fit in with her female friends by acting 'unfeminine', due to a history of female classmates ostracizing her our of jealousy. However, when she sees Kou again she remembers her true self and decides to improve"
+              "CharacterProgression": "Futaba is a high-school student who attempts to fit in with her female friends by acting 'unfeminine', due to a history of female classmates ostracizing her our of jealousy. However, when she sees Kou again she remembers her true self and decides to remain true to herself."
             },
             
             {
               "Name": "Kou Mabuchi",
               "Age":16,
-              "Personality": "gentle, kind, quiet",
+              "Personality": "gentle, kind, quiet, blunt",
               "CharacterProgression": "Kou, after his mother's death became more pessimistic and distanced himself from Futaba.As Kou became more honest with others including himself,he finally realizes that he doesn't need to hide his feelings anymore and pursues Futaba."
             }
           ],
           "Description": "Ao Haru Ride follows Futaba as she searches for true love and friendship,all while trying her best to stay true to herself",
           "Rating":8.0
+        },
+        
+        {
+          "Title":"One Piece",
+          "Genre": "Shonen",
+          "Volumes": 101,
+          "Characters": [
+            {
+              "Name": "Monkey D. Luffy",
+              "Age":17,
+              "Personality": " ESFP - spontaneous, resourceful, outgoing, friendly,fun-loving ",
+              "CharacterProgression": "Luffy is the captain of the Straw Hats and the main character of the series. While many aspects of his personality are the same, he's definitely matured. He also takes things more seriously after the time skip, even if he does still have childish moments. He's slowly growing into someone capable of becoming King of the Pirates."
+            },
+
+            {
+              "Name": "Nami",
+              "Age":18,
+              "Personality": "gentle, kind, quiet, blunt",
+              "CharacterProgression": "Cat Burglar - Nami is the navigator of the Straw Hat Pirates.She was formerly a member of the Arlong Pirates and initially joined the Straw Hats so that she could rob them in order to buy back her village from Arlong. However, she legitimately joined the Straw Hats after they rebelled against and defeated Arlong. Her dream is to make a map of the entire world."
+            }
+          ],
+          "Description": "Luffy, a boy who accidently eats the Devil Fruit and gives his body the properties of rubber, together with his crew 'Straw Hat Pirates' bounces around the world in search of the famed 'One Piece', a treasure that will allow him to become the next King of Pirates ",
+          "Rating":8.8
         }
         
       ]
@@ -53,6 +76,12 @@
         "Title":"Claymore",
         "Dimensions": "A4",
         "Material": "Canvas"
+      },
+
+      {
+        "Title":"Jujutsu Kaisen",
+        "Dimensions": "A4",
+        "Material": "Foam Board"
       }
     ],
     "Figurines":[
@@ -67,6 +96,12 @@
         "Title":"Giyu Tomioka, BanG Dream!",
         "Price": 29.00,
         "Manufacturer": "Bandai Spirits -Official Anime Merchandise"
+      },
+      {
+        "Cuteness":"Very handsome",
+        "Title":"Satoru Gojo, BanG Dream!",
+        "Price": 29.00,
+        "Manufacturer": "Tokyo Toys - Official Anime Merchandise"
       }
     ],
     "StoreMusic": {
