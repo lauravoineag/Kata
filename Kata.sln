@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaStore", "MangaStore\Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals", "Animals\Animals.csproj", "{34D9DF55-6A3C-4514-B2B0-07BC5C4843B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShopHRM", "BethanysPieShopHRM\BethanysPieShopHRM.csproj", "{65C38BA8-9945-4115-B8C7-418DDCEF7934}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,9 @@ Global
 		{34D9DF55-6A3C-4514-B2B0-07BC5C4843B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34D9DF55-6A3C-4514-B2B0-07BC5C4843B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34D9DF55-6A3C-4514-B2B0-07BC5C4843B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65C38BA8-9945-4115-B8C7-418DDCEF7934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C38BA8-9945-4115-B8C7-418DDCEF7934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C38BA8-9945-4115-B8C7-418DDCEF7934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C38BA8-9945-4115-B8C7-418DDCEF7934}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
