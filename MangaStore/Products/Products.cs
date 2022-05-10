@@ -1,12 +1,27 @@
+using Newtonsoft.Json;
+
 namespace MangaStore;
 
 public class Products
 {
-    public Books Books { get; } = new Books();
-    public Games Games { get; } = new Games();
+    public Books Books { get;}
+    public Games Games { get;}
+    public List<Poster> Posters { get; }
+    public List<Figurine> Figurines { get; }
     public List<IProduct> AllProducts { get; } = new List<IProduct>();
-    public List<Poster> Posters { get; } = new List<Poster>();
-    public List<Figurine> Figurines { get; } = new List<Figurine>();
+    
+    [JsonConstructor]
+    public Products(Books books, Games games, List<Poster> posters, List<Figurine> figurines)
+    {
+        Books = books;
+        Games = games;
+        Posters = posters;
+        Figurines = figurines;
+        AllProducts.AddRange(Books.AllBooks);
+        AllProducts.AddRange(Games.AllGames);
+        AllProducts.AddRange(Figurines);
+        AllProducts.AddRange(Posters);
+    }
     
     public void Add(Comic comic)
     {

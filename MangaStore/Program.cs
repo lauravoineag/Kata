@@ -7,3 +7,4 @@ Console.WriteLine("Contents of WriteText.txt = {0}", text);
 Stores mangaStores= JsonConvert.DeserializeObject<Stores>(text);
 
 Console.WriteLine("mangastore");
+
