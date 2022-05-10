@@ -1,144 +1,154 @@
 {
   "MangaStore":{
-    "Books":{
-      "Mangas": [
-        {
-          "Title":"Naruto",
-          "Genre": "Action",
-          "Volumes": 72,
-          "Characters": [
-            {
-              "Name": "Naruto",
-              "Age":13,
-              "Personality": "explosive, loud, simple minded, easy going, cheerful person",
-              "CharacterProgression": "Naruto is scorned by the villagers for being the host of a Nine-Tails Demon but soon becomes a ninja under an experienced sensei and along with his team completes dangerous missions and saves the world a few times earning him the position of leader and raising the next generation.  "
-            }
-          ],
-          "Description": "The story is about Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village",
-          "Rating":8.0
-        },
-        {
-          "Title":"Blue Spring Ride",
-          "Genre": "Shojo",
-          "Volumes": 13,
-          "Characters": [
-            {
-              "Name": "Futaba Yoshioka",
-              "Age":16,
-              "Personality": "strong-willed, stubborn, yet passionate and caring",
-              "CharacterProgression": "Futaba is a high-school student who attempts to fit in with her female friends by acting 'unfeminine', due to a history of female classmates ostracizing her our of jealousy. However, when she sees Kou again she remembers her true self and decides to remain true to herself."
-            },
-            
-            {
-              "Name": "Kou Mabuchi",
-              "Age":16,
-              "Personality": "gentle, kind, quiet, blunt",
-              "CharacterProgression": "Kou, after his mother's death became more pessimistic and distanced himself from Futaba.As Kou became more honest with others including himself,he finally realizes that he doesn't need to hide his feelings anymore and pursues Futaba."
-            }
-          ],
-          "Description": "Ao Haru Ride follows Futaba as she searches for true love and friendship,all while trying her best to stay true to herself",
-          "Rating":8.0
-        },
-        
-        {
-          "Title":"One Piece",
-          "Genre": "Shonen",
-          "Volumes": 101,
-          "Characters": [
-            {
-              "Name": "Monkey D. Luffy",
-              "Age":17,
-              "Personality": " ESFP - spontaneous, resourceful, outgoing, friendly,fun-loving ",
-              "CharacterProgression": "Luffy is the captain of the Straw Hats and the main character of the series. While many aspects of his personality are the same, he's definitely matured. He also takes things more seriously after the time skip, even if he does still have childish moments. He's slowly growing into someone capable of becoming King of the Pirates."
-            },
-
-            {
-              "Name": "Nami",
-              "Age":18,
-              "Personality": "gentle, kind, quiet, blunt",
-              "CharacterProgression": "Cat Burglar - Nami is the navigator of the Straw Hat Pirates.She was formerly a member of the Arlong Pirates and initially joined the Straw Hats so that she could rob them in order to buy back her village from Arlong. However, she legitimately joined the Straw Hats after they rebelled against and defeated Arlong. Her dream is to make a map of the entire world."
-            }
-          ],
-          "Description": "Luffy, a boy who accidently eats the Devil Fruit and gives his body the properties of rubber, together with his crew 'Straw Hat Pirates' bounces around the world in search of the famed 'One Piece', a treasure that will allow him to become the next King of Pirates ",
-          "Rating":8.8
-        }
-        
-      ]
-    },
-    "Posters": [
-      {
-        "Title": "Attack on Titan",
-        "Dimensions": "A4",
-        "Material": "Paper"
-      },
-
-      {
-        "Title":"Claymore",
-        "Dimensions": "A4",
-        "Material": "Canvas"
-      },
-
-      {
-        "Title":"Jujutsu Kaisen",
-        "Dimensions": "A4",
-        "Material": "Foam Board"
-      }
-    ],
-    "Figurines":[
-      {
-        "Cuteness":"Amazingly cute",
-        "Title":"Ran Mitake, BanG Dream!",
-        "Price": 39.00,
-        "Manufacturer": "Bandai Spirits -Official Anime Merchandise"
-      },
-      {
-        "Cuteness":"Very handsome",
-        "Title":"Giyu Tomioka, BanG Dream!",
-        "Price": 29.00,
-        "Manufacturer": "Bandai Spirits -Official Anime Merchandise"
-      },
-      {
-        "Cuteness":"Very handsome",
-        "Title":"Satoru Gojo, BanG Dream!",
-        "Price": 29.00,
-        "Manufacturer": "Tokyo Toys - Official Anime Merchandise"
-      }
-    ],
     "StoreMusic": {
-        "Title":"Varied",
+        "Name":"Varied",
         "Genre": "Japanese Pop-Rock Music"
     },
-    "Games": {
-      "CardGames": [
+    "Products": {
+      "Books":{
+        "Mangas": [
+          {
+            "Name":"Naruto",
+            "Genre": "Action",
+            "Volumes": 72,
+            "Characters": [
+              {
+                "Name": "Naruto",
+                "Age":13,
+                "Personality": "explosive, loud, simple minded, easy going, cheerful person",
+                "CharacterProgression": "Naruto is scorned by the villagers for being the host of a Nine-Tails Demon but soon becomes a ninja under an experienced sensei and along with his team completes dangerous missions and saves the world a few times earning him the position of leader and raising the next generation.  "
+              }
+            ],
+            "Description": "The story is about Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village",
+            "Rating":8.0
+          },
+          {
+            "Name":"Blue Spring Ride",
+            "Genre": "Shojo",
+            "Volumes": 13,
+            "Characters": [
+              {
+                "Name": "Futaba Yoshioka",
+                "Age":16,
+                "Personality": "strong-willed, stubborn, yet passionate and caring",
+                "CharacterProgression": "Futaba is a high-school student who attempts to fit in with her female friends by acting 'unfeminine', due to a history of female classmates ostracizing her our of jealousy. However, when she sees Kou again she remembers her true self and decides to remain true to herself."
+              },
+
+              {
+                "Name": "Kou Mabuchi",
+                "Age":16,
+                "Personality": "gentle, kind, quiet, blunt",
+                "CharacterProgression": "Kou, after his mother's death became more pessimistic and distanced himself from Futaba.As Kou became more honest with others including himself,he finally realizes that he doesn't need to hide his feelings anymore and pursues Futaba."
+              }
+            ],
+            "Description": "Ao Haru Ride follows Futaba as she searches for true love and friendship,all while trying her best to stay true to herself",
+            "Rating":8.0
+          },
+
+          {
+            "Name":"One Piece",
+            "Genre": "Shonen",
+            "Volumes": 101,
+            "Characters": [
+              {
+                "Name": "Monkey D. Luffy",
+                "Age":17,
+                "Personality": " ESFP - spontaneous, resourceful, outgoing, friendly,fun-loving ",
+                "CharacterProgression": "Luffy is the captain of the Straw Hats and the main character of the series. While many aspects of his personality are the same, he's definitely matured. He also takes things more seriously after the time skip, even if he does still have childish moments. He's slowly growing into someone capable of becoming King of the Pirates."
+              },
+
+              {
+                "Name": "Nami",
+                "Age":18,
+                "Personality": "gentle, kind, quiet, blunt",
+                "CharacterProgression": "Cat Burglar - Nami is the navigator of the Straw Hat Pirates.She was formerly a member of the Arlong Pirates and initially joined the Straw Hats so that she could rob them in order to buy back her village from Arlong. However, she legitimately joined the Straw Hats after they rebelled against and defeated Arlong. Her dream is to make a map of the entire world."
+              }
+            ],
+            "Description": "Luffy, a boy who accidently eats the Devil Fruit and gives his body the properties of rubber, together with his crew 'Straw Hat Pirates' bounces around the world in search of the famed 'One Piece', a treasure that will allow him to become the next King of Pirates ",
+            "Rating":8.8
+          }
+
+        ],
+        "Comics":[
+          {
+            "Name": "Batman",
+            "Price": 10.00,
+            "Genre": "Action",
+            "Description": "A superhero movie",
+            "Rating": 7
+          }
+        ]
+      },
+      "Posters": [
         {
-          "Title":"Yu-Gi-Oh!",
-          "Description": "Trading card Anime"
+          "Name": "Attack on Titan",
+          "Dimensions": "A4",
+          "Material": "Paper"
         },
         {
-          "Title":"Demon Slayer",
-          "Description": "Playing cards with Demon Slayer anime print"
+          "Name":"Claymore",
+          "Dimensions": "A4",
+          "Material": "Canvas"
+        },
+        {
+          "Name":"Jujutsu Kaisen",
+          "Dimensions": "A4",
+          "Material": "Foam Board"
         }
       ],
-      "VideoGames": [
+      "Figurines":[
         {
-        "Title":"Demon Slayer",
-        "Description": "Video Game with Demon Slayer "
+          "Cuteness":"Amazingly cute",
+          "Name":"Ran Mitake, BanG Dream!",
+          "Price": 39.00,
+          "Manufacturer": "Bandai Spirits -Official Anime Merchandise"
         },
         {
-          "Title":"Sword Art Online",
-          "Description": "Video Game with Sword Art Online Characters "
+          "Cuteness":"Very handsome",
+          "Name":"Giyu Tomioka, BanG Dream!",
+          "Price": 29.00,
+          "Manufacturer": "Bandai Spirits -Official Anime Merchandise"
+        },
+        {
+          "Cuteness":"Very handsome",
+          "Name":"Satoru Gojo, BanG Dream!",
+          "Price": 29.00,
+          "Manufacturer": "Tokyo Toys - Official Anime Merchandise"
         }
       ],
-      "BoardGames": [
-        {
-          "Title":"Demon Slayer",
-          "Description": "Board Game with Demon Slayer Characters"
-        },
-        {
-          "Title":"Hunted X Hunter",
-          "Description": "Board Game with Hunter X Hunter Characters"
-        }
-      ]
+      "Games": {
+        "CardGames": [
+          {
+            "Name":"Yu-Gi-Oh!",
+            "Description": "Trading card Anime"
+          },
+          {
+            "Name":"Demon Slayer",
+            "Description": "Playing cards with Demon Slayer anime print"
+          }
+        ],
+        "VideoGames": [
+          {
+            "Name":"Demon Slayer",
+            "Description": "Video Game with Demon Slayer "
+          },
+          {
+            "Name":"Sword Art Online",
+            "Description": "Video Game with Sword Art Online Characters "
+          }
+        ],
+        "BoardGames": [
+          {
+            "Name":"Demon Slayer",
+            "Description": "Board Game with Demon Slayer Characters"
+          },
+          {
+            "Name":"Hunted X Hunter",
+            "Description": "Board Game with Hunter X Hunter Characters"
+          }
+        ]
+      }
+      
     }
   }
 }
