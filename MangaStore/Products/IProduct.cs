@@ -1,4 +1,4 @@
-namespace MangaStore.Products;
+namespace MangaStore;
 
 public interface IProduct
 {

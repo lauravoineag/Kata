@@ -9,20 +9,17 @@ public class Books
     public void Add(Manga manga)
     {
         Mangas.Add(manga);
+        AllBooks.Add(manga);
     }
 
     public void Add(Comic comic)
     {
         Comics.Add(comic);
+        AllBooks.Add(comic);
     }
 
-    public void Remove(Manga manga)
+    public void Remove(string name)
     {
-        Mangas.Add(manga);
-    }
-
-    public void Remove(Comic comic)
-    {
-        Comics.Add(comic);
+        throw new NotImplementedException();
     }
 }
