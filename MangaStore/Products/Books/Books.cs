@@ -30,8 +30,27 @@ public class Books
         AllBooks.Add(comic);
     }
 
+    public void Remove(Comic comic)
+    {
+        Comics.Remove(comic);
+        AllBooks.Remove(comic);
+    }
+    
     public void Remove(string name)
     {
         throw new NotImplementedException();
+    }
+
+    public IBook Find(string name)
+    {
+        foreach (IBook book in AllBooks)
+        {
+            if (book.Name == name)
+            {
+                return book;
+            }
+        }
+
+        throw new ProductNotFound();
     }
 }
