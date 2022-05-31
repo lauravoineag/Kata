@@ -21,6 +21,7 @@ user.ShoppingCart.Add(games.Find("Yu-Gi-Oh!"));
 
 var products = mangaStores.MangaStore.Products;
 user.ShoppingCart.Add(products.Find("Claymore"));
-user.ShoppingCart.Add(products.Find("Giyu Tomioka, BanG Dream!"));
+user.ShoppingCart.Add(products.FindMatch("Kaisen"));
+
 
 Console.WriteLine("end");

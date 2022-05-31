@@ -36,6 +36,19 @@ public class Products
         throw new ProductNotFound();
     }
     
+    public IProduct FindMatch(string name)
+    {
+        foreach (IProduct game in AllProducts)
+        {
+            if (game.Name.Contains(name))
+            {
+                return game;
+            }
+        }
+
+        throw new ProductNotFound();
+    }
+    
     public void Add(Comic comic)
     {
         AllProducts.Add(comic);
