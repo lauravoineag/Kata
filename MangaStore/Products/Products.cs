@@ -23,6 +23,19 @@ public class Products
         AllProducts.AddRange(Posters);
     }
     
+    public IProduct Find(string name)
+    {
+        foreach (IProduct game in AllProducts)
+        {
+            if (game.Name == name)
+            {
+                return game;
+            }
+        }
+
+        throw new ProductNotFound();
+    }
+    
     public void Add(Comic comic)
     {
         AllProducts.Add(comic);
@@ -67,4 +80,5 @@ public class Products
     {
         AllProducts.Remove(product);
     }
+    
 }

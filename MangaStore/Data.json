@@ -26,7 +26,7 @@
           {
             "Name":"Blue Spring Ride",
             "Genre": "Shojo",
-            "Price": 10.00,
+            "Price": 11.00,
             "Volumes": 13,
             "Characters": [
               {
@@ -87,7 +87,7 @@
           "Name": "Attack on Titan",
           "Dimensions": "A4",
           "Material": "Paper",
-          "Price": 10.00
+          "Price": 9.60
         },
         {
           "Name":"Claymore",
@@ -139,24 +139,24 @@
           {
             "Name":"Demon Slayer",
             "Description": "Video Game with Demon Slayer ",
-            "Price": 10.00
+            "Price": 9.00
           },
           {
             "Name":"Sword Art Online",
             "Description": "Video Game with Sword Art Online Characters ",
-            "Price": 10.00
+            "Price": 10.01
           }
         ],
         "BoardGames": [
           {
             "Name":"Demon Slayer",
             "Description": "Board Game with Demon Slayer Characters",
-            "Price": 10.00
+            "Price": 10.02
           },
           {
             "Name":"Hunted X Hunter",
             "Description": "Board Game with Hunter X Hunter Characters",
-            "Price": 10.00
+            "Price": 10.03
           }
         ]
       }

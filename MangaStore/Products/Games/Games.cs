@@ -40,4 +40,16 @@ public class Games
     {
         throw new NotImplementedException();
     }
+    public IGame Find(string name)
+    {
+        foreach (IGame game in AllGames)
+        {
+            if (game.Name == name)
+            {
+                return game;
+            }
+        }
+
+        throw new ProductNotFound();
+    }
 }
