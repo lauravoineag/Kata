@@ -8,4 +8,5 @@ public class Figurine: IProduct
     public string Manufacturer { get; set; }
     public string Name { get; set; }
     public double Price { get; set; }
+    public int Discount { get; set; }
 }

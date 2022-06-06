@@ -11,6 +11,7 @@
             "Name":"Naruto",
             "Genre": "Action",
             "Price": 10.00,
+            "Discount": 5,
             "Volumes": 72,
             "Characters": [
               {
@@ -27,6 +28,7 @@
             "Name":"Blue Spring Ride",
             "Genre": "Shojo",
             "Price": 11.00,
+            "Discount": 5,
             "Volumes": 13,
             "Characters": [
               {
@@ -76,6 +78,7 @@
           {
             "Name": "Batman",
             "Price": 10.00,
+            "Discount": 6,
             "Genre": "Action",
             "Description": "A superhero movie",
             "Rating": 7
@@ -122,15 +125,15 @@
           "Manufacturer": "Tokyo Toys - Official Anime Merchandise"
         }
       ],
-      "Games": {
-        "CardGames": [
+      "ShoppingCart": {
+        "Yu-Gi-Oh!": [
           {
             "Name":"Yu-Gi-Oh!",
             "Description": "Trading card Anime",
             "Price": 3.00
           },
           {
-            "Name":"Demon Slayer",
+            "Name":"Yu-Gi-Oh!",
             "Description": "Playing cards with Demon Slayer anime print",
             "Price": 3.00
           }

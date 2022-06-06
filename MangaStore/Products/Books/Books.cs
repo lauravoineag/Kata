@@ -13,7 +13,7 @@ public class Books
     {
         Mangas = mangas;
         Comics = comics;
-        
+
         AllBooks.AddRange(mangas);
         AllBooks.AddRange(comics);
     }
@@ -35,7 +35,7 @@ public class Books
         Comics.Remove(comic);
         AllBooks.Remove(comic);
     }
-    
+
     public void Remove(string name)
     {
         throw new NotImplementedException();
@@ -53,4 +53,6 @@ public class Books
 
         throw new ProductNotFound();
     }
+
 }
+    

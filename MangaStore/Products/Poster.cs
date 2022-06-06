@@ -6,4 +6,5 @@ public class Poster: IProduct
     public string Material { get; set; }
     public string Name { get; set; }
     public double Price { get; set; }
+    public int Discount { get; set; }
 }

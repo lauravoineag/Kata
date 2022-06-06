@@ -38,17 +38,17 @@ public class Products
     
     public IProduct FindMatch(string name)
     {
-        foreach (IProduct game in AllProducts)
+        foreach (IProduct item in AllProducts)
         {
-            if (game.Name.Contains(name))
+            if (item.Name.Contains(name))
             {
-                return game;
+                return item;
             }
         }
 
         throw new ProductNotFound();
     }
-    
+
     public void Add(Comic comic)
     {
         AllProducts.Add(comic);
