@@ -12,4 +12,8 @@
       <PackageReference Include="StyleCop" Version="6.2.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AddingManga\AddingManga.csproj" />
+    </ItemGroup>
+
 </Project>

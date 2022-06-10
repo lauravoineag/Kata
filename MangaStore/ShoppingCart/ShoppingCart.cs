@@ -5,38 +5,50 @@ namespace MangaStore.ShoppingCart;
 
 public class ShoppingCart
 {
-    public double Total { get; set; }
+    public double TotalPrice { get; set; }
     public List<CartItem> CartItems { get; set; } = new ();
 
     public void Add(IProduct product)
     {
-        var cartItem = new CartItem(product);
-
-        foreach (var item in CartItems)
+        foreach (var cartItem in CartItems)
         {
-            if (product.Name == cartItem.Product.Name)
+            if (cartItem.Product.Name == product.Name)
             {
-                cartItem.Quantity += 1;
-                Total += cartItem.CalculateItem();
-            }
-            else
-            {
-                CartItems.Add(cartItem);
-                Total += cartItem.CalculateItem();
-            }
-
+                cartItem.Quantity++;
+                TotalPrice += cartItem.Product.Price;
+                return;
+            } 
         }
+        CartItems.Add(new CartItem(product));
+        TotalPrice += product.Price;
+        Console.WriteLine("end"); 
     }
-    
-    public void Remove(IProduct product)
+
+    public void Remove(string productName)
     {
-        var cartItem = new CartItem(product);
-        CartItems.Remove(cartItem);
-        Total -= cartItem.CalculateItem();
+        foreach (var cartItem in CartItems)
+        {
+            if (cartItem.Product.Name == productName)
+            {
+                if (cartItem.Quantity <= 1)
+                {
+                    CartItems.Remove(cartItem);
+
+                }
+                else
+                { 
+                    cartItem.Quantity--;
+                    TotalPrice += cartItem.Product.Price;
+                }
+                
+                return;
+            } 
+        }
     }
 
     public double CalcutateTotal()
     {
-        return Total;
+        return TotalPrice;
+        
     }
 }

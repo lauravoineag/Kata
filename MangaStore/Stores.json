@@ -83,6 +83,14 @@
             "Genre": "Action",
             "Description": "A superhero movie",
             "Rating": 7
+          },
+          {
+            "Name": "Superman",
+            "Price": 7.80,
+            "Discount": 6,
+            "Genre": "Action",
+            "Description": "A superhero movie",
+            "Rating": 7
           }
         ]
       },

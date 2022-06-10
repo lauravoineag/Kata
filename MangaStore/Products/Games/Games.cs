@@ -40,7 +40,7 @@ public class Games
     {
         throw new NotImplementedException();
     }
-    public IGame Find(string name)
+    public IGame Find(string name) 
     {
         foreach (IGame game in AllGames)
         {
