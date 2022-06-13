@@ -7,37 +7,56 @@ string text = File.ReadAllText(@"C:\Code\Kata\MangaStore\Stores.json");
 
 Stores stores= JsonConvert.DeserializeObject<Stores>(text);
 
-while (true)// Loop indefinitely
+while (true)// Loop indefinitely// Select choice
 {
-    Console.WriteLine("What would you like to add?\n 1.Books\n 2.Posters\n 3.Figurines\n 4.Games");//Prompt
+    Console.WriteLine("What would you like to add? Please select from numbers below.\n 1.Books\n 2.Posters\n 3.Figurines\n 4.Games");//Prompt
     string a = Console.ReadLine();//Get int from user
 
-    bool isValidInt = double.TryParse(a, out double number);//double works for negative numbers
+    bool isValidDouble = double.TryParse(a, out double number);//double works for negative numbers
 
-    if(isValidInt)
+    if(isValidDouble)
     {
-        
         if (number > 4)
         {
             Console.WriteLine($"{number} is not in the picklist. Please only select numbers from 1-4");
         }
+        else
         {
             Console.WriteLine("You selected number : " + number);
             break;
         }
     }
 
-    if (isValidInt == false)
+    if (isValidDouble == false)
     { 
         Console.WriteLine($"{number} is not a number in a the picklist. Please only select numbers from 1-4");
     }
 }
 
+while (true) //Select quantity
+{
+    Console.WriteLine("How many would you like to add? Enter quantity:");
+    string b = Console.ReadLine();
+    bool isValidDouble = double.TryParse(b, out double quantity);
+    {
+        if (isValidDouble)
+        {
+            if (quantity > 0)
+            {
+                Console.WriteLine("You selected quantity : " + quantity);
+                break;
+            }else
+            {
+                Console.WriteLine("Please select positive numbers only.");
+            }
+        }
 
-
-
-
-
+        if (isValidDouble == false)
+        {
+            Console.WriteLine($"{quantity} is not a number.Please enter correct quantity.");
+        }
+    }
+}
 
 
 
