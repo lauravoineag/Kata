@@ -10,16 +10,26 @@ Stores stores= JsonConvert.DeserializeObject<Stores>(text);
 while (true)// Loop indefinitely
 {
     Console.WriteLine("What would you like to add?\n 1.Books\n 2.Posters\n 3.Figurines\n 4.Games");//Prompt
-    int a = Convert.ToInt32(Console.ReadLine());//Get int from user
-    
-    if (a > 4)
+    string a = Console.ReadLine();//Get int from user
+
+    bool isValidInt = double.TryParse(a, out double number);//double works for negative numbers
+
+    if(isValidInt)
     {
-        Console.WriteLine($"{a} is not in the picklist. Please only select numbers from 1-4");
+        
+        if (number > 4)
+        {
+            Console.WriteLine($"{number} is not in the picklist. Please only select numbers from 1-4");
+        }
+        {
+            Console.WriteLine("You selected number : " + number);
+            break;
+        }
     }
-    else
-    {
-        Console.WriteLine("You selected number : " + a);
-        break;
+
+    if (isValidInt == false)
+    { 
+        Console.WriteLine($"{number} is not a number in a the picklist. Please only select numbers from 1-4");
     }
 }
 
