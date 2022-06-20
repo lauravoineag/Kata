@@ -1,4 +1,5 @@
 ﻿using MangaStore;
+using MangaStore.ShoppingCart;
 using MangaStore.User;
 using Newtonsoft.Json;
 
@@ -12,11 +13,8 @@ while (true)// Loop indefinitely// Select choice
     Console.WriteLine();
     Console.WriteLine("What item would you like to add? Please select from numbers below.");
     Console.WriteLine("\n 1: Books\n 2: Posters\n 3: Figurines\n 4: Games");//Prompt
-    
     string a = Console.ReadLine();//Get int from user
-
     bool isValidDouble_a = double.TryParse(a, out double number_a);//double works for negative numbers
-
     if(isValidDouble_a)
     {
         if (number_a > 4 || number_a < 0)
@@ -30,42 +28,63 @@ while (true)// Loop indefinitely// Select choice
 
         if (number_a == 1)
         {
-            Console.WriteLine("Please select:\n 1: Mangas\n 2: Comics");
+            Console.WriteLine("Please select the book type:\n 1: Mangas\n 2: Comics");
             string b = Console.ReadLine();//Get int from user
-            bool isValidDouble_b = double.TryParse(a, out double number_b);//double works for negative numbers
-            if (number_b == 1)
+            bool isValidDouble_b = double.TryParse(b, out double number_b);//double works for negative numbers
+
+            if (isValidDouble_b)
             {
-                var mangaNames = stores.MangaStore.Products.Books.Mangas; 
-                Console.WriteLine("------------------------------------"); 
-                Console.WriteLine("This is the list of Manga Books:"); 
-                Console.WriteLine();
-                
-                int index = 1;//Declare the integer loop variable beforehand
-                foreach (Manga item in mangaNames) // Loop through all values, incrementing the loop variable with 1 each loop cycle
-                {
-                    Console.WriteLine($"{index}: {item.Name}");
-                    index++;
-                } 
-                Console.WriteLine("------------------------------------"); 
-                /*Console.WriteLine("What manga would you like to pick?"); 
-                Console.ReadLine();*/
-            }
-            else
-            {
-                var comicNames = stores.MangaStore.Products.Books.Comics; 
-                Console.WriteLine("List of all the names of the Comic:"); 
-                foreach (Comic item in comicNames) 
+                if (number_b == 1) 
                 { 
-                    Console.WriteLine(item.Name); 
+                    var mangaNames = stores.MangaStore.Products.Books.Mangas; 
+                    Console.WriteLine("------------------------------------"); 
+                    Console.WriteLine("This is the list of Manga Books Titles:"); 
+                    Console.WriteLine();
+                    
+                    int index = 1;//Declare the integer loop variable beforehand
+                    foreach (Manga item in mangaNames) // Loop through all values, incrementing the loop variable with 1 each loop cycle
+                    { 
+                        Console.WriteLine($"{index}: {item.Name}"); 
+                        index++; 
+                    } 
+                    Console.WriteLine("------------------------------------"); 
+                    Console.WriteLine("What manga would you like to add to cart?");
+                    
+                    string c = Console.ReadLine(); 
+                    bool isValidDouble_c = double.TryParse(c, out double number_c); 
+                    
+                    if (number_c == 1) 
+                    { 
+                        var user = new User("Laura"); 
+                        var mangas = stores.MangaStore.Products.Books; 
+                        user.ShoppingCart.Add(mangas.Find("Naruto")); 
+                        return; 
+                    } 
+                    if (isValidDouble_c == false) 
+                    { 
+                        Console.WriteLine($"{number_a} is not a number in a the picklist. Please only select numbers from 1-2"); 
+                    } 
+                    break; 
+                }
+                else 
+                {
+                    var comicNames = stores.MangaStore.Products.Books.Comics; 
+                    Console.WriteLine("List of all the names of the Comic:"); 
+                    int index = 1; 
+                    foreach (Comic item in comicNames) 
+                    { 
+                        Console.WriteLine($"{index}: {item.Name}"); 
+                        index++; 
+                    } 
+                    Console.WriteLine("What comic would you like to pick?"); 
+                    Console.ReadLine(); 
                 } 
-                /*Console.WriteLine("What comic would you like to pick?"); 
-                Console.ReadLine();*/
-            }
-            if (isValidDouble_a == false)
-            { 
-                Console.WriteLine($"{number_a} is not a number in a the picklist. Please only select numbers from 1-2");
-            }
-            break;
+                if (isValidDouble_a == false) 
+                { 
+                    Console.WriteLine($"{number_a} is not a number in a the picklist. Please only select numbers from 1-2"); 
+                } 
+                break; 
+            } 
         }
     }
 
@@ -73,7 +92,6 @@ while (true)// Loop indefinitely// Select choice
     { 
         Console.WriteLine($"{number_a} is not a number in a the picklist. Please only select numbers from 1-4");
     }
-    
 }
 
 
@@ -101,16 +119,6 @@ while (true)// Loop indefinitely// Select choice
         }
     }
 }*/
-
-
-
-
-
-
-
-
-
-
 
 
 
