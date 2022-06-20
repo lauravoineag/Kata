@@ -9,31 +9,75 @@ Stores stores= JsonConvert.DeserializeObject<Stores>(text);
 
 while (true)// Loop indefinitely// Select choice
 {
-    Console.WriteLine("What would you like to add? Please select from numbers below.\n 1.Books\n 2.Posters\n 3.Figurines\n 4.Games");//Prompt
+    Console.WriteLine();
+    Console.WriteLine("What item would you like to add? Please select from numbers below.");
+    Console.WriteLine("\n 1: Books\n 2: Posters\n 3: Figurines\n 4: Games");//Prompt
+    
     string a = Console.ReadLine();//Get int from user
 
-    bool isValidDouble = double.TryParse(a, out double number);//double works for negative numbers
+    bool isValidDouble_a = double.TryParse(a, out double number_a);//double works for negative numbers
 
-    if(isValidDouble)
+    if(isValidDouble_a)
     {
-        if (number > 4)
+        if (number_a > 4 || number_a < 0)
         {
-            Console.WriteLine($"{number} is not in the picklist. Please only select numbers from 1-4");
+            Console.WriteLine($"{number_a} is not in the picklist. Please only select numbers from 1-4");
         }
         else
         {
-            Console.WriteLine("You selected number : " + number);
+            Console.WriteLine("You selected number : " + number_a);
+        }
+
+        if (number_a == 1)
+        {
+            Console.WriteLine("Please select:\n 1: Mangas\n 2: Comics");
+            string b = Console.ReadLine();//Get int from user
+            bool isValidDouble_b = double.TryParse(a, out double number_b);//double works for negative numbers
+            if (number_b == 1)
+            {
+                var mangaNames = stores.MangaStore.Products.Books.Mangas; 
+                Console.WriteLine("------------------------------------"); 
+                Console.WriteLine("This is the list of Manga Books:"); 
+                Console.WriteLine();
+                
+                int index = 1;//Declare the integer loop variable beforehand
+                foreach (Manga item in mangaNames) // Loop through all values, incrementing the loop variable with 1 each loop cycle
+                {
+                    Console.WriteLine($"{index}: {item.Name}");
+                    index++;
+                } 
+                Console.WriteLine("------------------------------------"); 
+                /*Console.WriteLine("What manga would you like to pick?"); 
+                Console.ReadLine();*/
+            }
+            else
+            {
+                var comicNames = stores.MangaStore.Products.Books.Comics; 
+                Console.WriteLine("List of all the names of the Comic:"); 
+                foreach (Comic item in comicNames) 
+                { 
+                    Console.WriteLine(item.Name); 
+                } 
+                /*Console.WriteLine("What comic would you like to pick?"); 
+                Console.ReadLine();*/
+            }
+            if (isValidDouble_a == false)
+            { 
+                Console.WriteLine($"{number_a} is not a number in a the picklist. Please only select numbers from 1-2");
+            }
             break;
         }
     }
 
-    if (isValidDouble == false)
+    if (isValidDouble_a == false)
     { 
-        Console.WriteLine($"{number} is not a number in a the picklist. Please only select numbers from 1-4");
+        Console.WriteLine($"{number_a} is not a number in a the picklist. Please only select numbers from 1-4");
     }
+    
 }
 
-while (true) //Select quantity
+
+/*while (true) //Select quantity
 {
     Console.WriteLine("How many would you like to add? Enter quantity:");
     string b = Console.ReadLine();
@@ -56,34 +100,11 @@ while (true) //Select quantity
             Console.WriteLine($"{quantity} is not a number.Please enter correct quantity.");
         }
     }
-}
+}*/
 
 
 
 
-
-
-
-
-
-
-/*var mangaNames = stores.MangaStore.Products.Books.Mangas;
-Console.WriteLine("List of all the names of the Manga:");
-foreach (Manga item in mangaNames)
-{
-    Console.WriteLine(item.Name);
-}
-Console.WriteLine("What manga would you like to pick?");
-Console.ReadLine();
-
-var comicNames = stores.MangaStore.Products.Books.Comics;
-Console.WriteLine("List of all the names of the Comic:");
-foreach (Comic item in comicNames)
-{
-    Console.WriteLine(item.Name);
-}
-Console.WriteLine("What comic would you like to pick?");
-Console.ReadLine();*/
 
 
 
