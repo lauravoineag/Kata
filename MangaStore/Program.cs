@@ -51,39 +51,87 @@ while (true)// Loop indefinitely// Select choice
                     Console.WriteLine("What manga would you like to add to cart?");
                     
                     string c = Console.ReadLine(); 
-                    bool isValidDouble_c = double.TryParse(c, out double number_c); 
+                    bool isValidDouble_c = double.TryParse(c, out double number_c);
+                    if (isValidDouble_c)
+                    {
+                        if (number_c == 1) 
+                        {
+                            var mangas = stores.MangaStore.Products.Books; 
+                            var naruto=mangas.Find("Naruto");
+                            var user_c = new User("Laura"); 
+                            user_c.ShoppingCart.Add(naruto);
+                            Console.WriteLine($"You added {naruto.Name} to cart");
+                        } 
+                        if (number_c == 2) 
+                        {
+                            var mangas = stores.MangaStore.Products.Books; 
+                            var blueSpringRide=mangas.Find("Blue Spring Ride");
+                            var user_c = new User("Laura"); 
+                            user_c.ShoppingCart.Add(blueSpringRide);
+                            Console.WriteLine($"You added {blueSpringRide.Name} to cart");
+                        }
+                        if (number_c == 3) 
+                        {
+                            var mangas = stores.MangaStore.Products.Books; 
+                            var onePiece=mangas.Find("One Piece");
+                            var user_c = new User("Laura"); 
+                            user_c.ShoppingCart.Add(onePiece);
+                            Console.WriteLine($"You added {onePiece.Name} to cart");
+                        }
+                        if (number_c > 3 || number_a < 0)
+                        { 
+                            Console.WriteLine($"{number_a} is not a number in a the picklist. Please only select numbers from 1-2"); 
+                        }
+                    }
                     
-                    if (number_c == 1) 
-                    { 
-                        var user = new User("Laura"); 
-                        var mangas = stores.MangaStore.Products.Books; 
-                        user.ShoppingCart.Add(mangas.Find("Naruto")); 
-                        return; 
-                    } 
                     if (isValidDouble_c == false) 
                     { 
                         Console.WriteLine($"{number_a} is not a number in a the picklist. Please only select numbers from 1-2"); 
-                    } 
-                    break; 
+                    }
                 }
-                else 
+                else if (number_b == 2)
                 {
-                    var comicNames = stores.MangaStore.Products.Books.Comics; 
-                    Console.WriteLine("List of all the names of the Comic:"); 
-                    int index = 1; 
-                    foreach (Comic item in comicNames) 
-                    { 
-                        Console.WriteLine($"{index}: {item.Name}"); 
-                        index++; 
-                    } 
-                    Console.WriteLine("What comic would you like to pick?"); 
-                    Console.ReadLine(); 
-                } 
-                if (isValidDouble_a == false) 
-                { 
-                    Console.WriteLine($"{number_a} is not a number in a the picklist. Please only select numbers from 1-2"); 
-                } 
-                break; 
+                    var comicNames = stores.MangaStore.Products.Books.Comics;
+                    Console.WriteLine("List of all the names of the Comic:");
+                    int index = 1;
+                    foreach (Comic item in comicNames)
+                    {
+                        Console.WriteLine($"{index}: {item.Name}");
+                        index++;
+                    }
+
+                    Console.WriteLine("What comic would you like to add to the cart?");
+                    string d = Console.ReadLine();
+                    bool isValidDouble_d = double.TryParse(d, out double number_d);
+                    if (isValidDouble_d)
+                    {
+                        if (number_d == 1)
+                        {
+                            var mangas = stores.MangaStore.Products.Books;
+                            var batman = mangas.Find("Batman");
+                            var user_c = new User("Laura");
+                            user_c.ShoppingCart.Add(batman);
+                            Console.WriteLine($"You added {batman.Name} to cart");
+                        }
+
+                        if (number_d == 2)
+                        {
+                            var mangas = stores.MangaStore.Products.Books;
+                            var superman = mangas.Find("Superman");
+                            var user_c = new User("Laura");
+                            user_c.ShoppingCart.Add(superman);
+                            Console.WriteLine($"You added {superman.Name} to cart");
+                        }
+                    }
+
+                    if (isValidDouble_a == false)
+                    {
+                        Console.WriteLine(
+                            $"{number_a} is not a number in a the picklist. Please only select numbers from 1-2");
+                    }
+
+                    break;
+                }
             } 
         }
     }
