@@ -1,4 +1,4 @@
-namespace MangaStore.User;
+namespace MangaStore.Users;
 using ShoppingCart;
 
 public class User
