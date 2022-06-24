@@ -11,6 +11,11 @@ public class WeatherForecastController : ControllerBase
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
+    private static readonly string[] Cities = new[]
+    {
+        "Vienna", "Copenhagen", "Zurich", "Geneva", "Frankfurt"
+    };
+
     private readonly ILogger<WeatherForecastController> _logger;
 
     public WeatherForecastController(ILogger<WeatherForecastController> logger)
@@ -19,14 +24,20 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    public CityForecast Get()
     {
-        return Enumerable.Range(0, 5).Select(index => new WeatherForecast
+        var city = Cities[Random.Shared.Next(Cities.Length)];
+        var weatherForecasts= Enumerable.Range(0, 5).Select(index => new WeatherForecast
         {
             Date = DateTime.Now.AddDays(index).ToString("D"),
             TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            Summary = Summaries[Random.Shared.Next(Summaries.Length)],
         })
         .ToArray();
+        return new CityForecast()
+        {
+            City = city,
+            WeatherForecasts = weatherForecasts
+        };
     }
 }
