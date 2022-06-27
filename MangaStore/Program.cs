@@ -57,4 +57,3 @@ var products = stores.MangaStore.Products;
 user.ShoppingCart.Add(products.Find("Claymore"));
 user.ShoppingCart.Add(products.FindMatch("Kaisen"));*/
 
-Console.WriteLine("end");

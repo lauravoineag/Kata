@@ -21,7 +21,6 @@ public class ShoppingCart
         }
         CartItems.Add(new CartItem(product));
         TotalPrice += product.Price;
-        Console.WriteLine("end"); 
     }
 
     public void Remove(string productName)
