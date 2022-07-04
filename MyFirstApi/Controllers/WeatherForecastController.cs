@@ -17,22 +17,28 @@ public class WeatherForecastController : ControllerBase
     };
 
     [HttpGet(Name = "GetWeatherForecast")]
-    public CityForecast Get(int days)
+    public IActionResult Get(int days = 5)
     {
-        var city = Cities[Random.Shared.Next(Cities.Length)];
-        
-        var weatherForecasts= Enumerable.Range(0, days).Select(index => new WeatherForecast
+        if (days > 14 || days < 1)
         {
-            Date = DateTime.Now.AddDays(index).ToString("D"),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)],
-        })
-        .ToArray();
-        
-        return new CityForecast()
+            return BadRequest("Weather forecast only available for the next 14 days");
+        }
+
+        var city = Cities[Random.Shared.Next(Cities.Length)];
+
+        var weatherForecasts = Enumerable.Range(0, days).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index).ToString("D"),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)],
+            })
+            .ToArray();
+
+        var result = new CityForecast()
         {
             City = city,
             WeatherForecasts = weatherForecasts
         };
+        return Ok(result);
     }
 }
