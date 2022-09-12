@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VowelCount", "VowelCount\Vo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ternary - MakeNegative", "Ternary - MakeNegative\Ternary - MakeNegative.csproj", "{9155BFEC-CFFE-4F18-85F9-A63E5B5F3738}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordValidation", "PasswordValidation\PasswordValidation.csproj", "{9E87DE71-44F3-4574-9334-4E2DFEEC7B42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +110,9 @@ Global
 		{9155BFEC-CFFE-4F18-85F9-A63E5B5F3738}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9155BFEC-CFFE-4F18-85F9-A63E5B5F3738}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9155BFEC-CFFE-4F18-85F9-A63E5B5F3738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E87DE71-44F3-4574-9334-4E2DFEEC7B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E87DE71-44F3-4574-9334-4E2DFEEC7B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E87DE71-44F3-4574-9334-4E2DFEEC7B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E87DE71-44F3-4574-9334-4E2DFEEC7B42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
