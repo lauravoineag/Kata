@@ -9,7 +9,7 @@ namespace PasswordValidation
 
 
             return !string.IsNullOrEmpty(password) &&
-                   password.Length > 8 && password.Length <= 15 &&
+                   password.Length > 8 &&
                    password.Any(char.IsUpper) &&
                    password.Any(char.IsLower) &&
                    password.Contains("_") &&
